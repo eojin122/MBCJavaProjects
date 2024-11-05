@@ -26,17 +26,26 @@ public class ClassQuiz5_Wizard extends Player{
 	}
 	
 	
-	//
+	//메소드로 받는 값이 배열임
 	public void blizzard(Player[] player) {
 		System.out.print("-----------------------");
 		System.out.print(this.name + "님의 눈보라 시전!");
 		
 		// 기능
-		// 1. 매개변수 player배열을 향상된 for문으로 회전.
+		// 1. 매개변수 player배열을 향상된 for문으로 회전. > 강화된 for문 사용
 		// 2. for문 안에서는 10~15사이의 랜덤난수를 발생
 		// 3. player배열의 hp를 각각 랜덤난수 만큼 감소시킵니다.
 		// 4. player배열의 이름과 함께 랜덤 피해를 각각 출력하세요
 		
+		// 1. for문 사용(강화된 for문)
+		for(Player play:player) {
+			// 2. 난수 생성
+			int demage = (int)(Math.random() * 6) + 10;  // 10 ~ 15의 값이 나옴
+			// 3. hp 감소
+			play.hp -= demage;
+			// 4. 감소 내용 출력
+			System.out.println(play.name + "님이 " + demage + "피해를 입었습니다.");
+		}
 	}
 	//
 	
