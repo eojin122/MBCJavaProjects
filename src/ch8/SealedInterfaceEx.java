@@ -5,7 +5,7 @@ public class SealedInterfaceEx {
 	public static void main(String[] args) {
 		ImplClass impl = new ImplClass();
 		
-		interfaceA ia = imp1;
+		interfaceA ia = impl;
 		ia.methodA();
 		
 		System.out.println();
