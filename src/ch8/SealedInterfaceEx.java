@@ -3,7 +3,21 @@ package ch8;
 public class SealedInterfaceEx {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		ImplClass impl = new ImplClass();
+		
+		interfaceA ia = imp1;
+		ia.methodA();
+		
+		System.out.println();
+		interfaceB ib = impl;
+		ib.methodA();
+		ib.methodB();
+		
+		System.out.println();
+		interfaceC ic = impl;
+		ic.methodA();
+		ic.methodB();
+		ic.methodC();
 
 	}
 
