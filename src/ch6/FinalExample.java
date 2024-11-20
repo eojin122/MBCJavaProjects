@@ -1,7 +1,5 @@
 package ch6;
 
-import ch6.obj.Person;
-
 public class FinalExample {
 
 	public static void main(String[] args) {
@@ -18,7 +16,7 @@ public class FinalExample {
 
 }
 
-class parson {
+class Person {
 	//final 테스트를 위한 Person 클래스
 	//final을 사용하면 변수를 상수화 처리를 하게 됩니다.
 	
